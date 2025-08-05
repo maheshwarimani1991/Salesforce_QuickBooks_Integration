@@ -1,18 +1,24 @@
-# Salesforce DX Project: Next Steps
+# QuickBooks Integration for Salesforce
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Overview
+This package provides integration between Salesforce and QuickBooks by adding custom fields to Salesforce standard objects to store QuickBooks data references.
 
-## How Do You Plan to Deploy Your Changes?
+## Features
+- Synchronization between Salesforce Accounts and QuickBooks Customers
+- Synchronization between Salesforce Contacts and QuickBooks Contacts
+- Synchronization between Salesforce Invoice and QuickBooks Invoice
+- Tracking of QuickBooks IDs and sync tokens for data integrity
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Technical Details
 
-## Configure Your Salesforce DX Project
+### Custom Fields
+The package includes the following custom fields:
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+#### Account Object
+- `QuickBookId__c`: Stores the QuickBooks ID for the corresponding customer
+- `QuickBookSyncToken__c`: Stores the QuickBooks sync token for data synchronization
+- `Contact__c`: Reference to a primary contact
 
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+#### Contact Object
+- `QuickBookId__c`: Stores the QuickBooks ID for the corresponding contact
+- `QuickBookSyncToken__c`: Stores the QuickBooks sync token for data synchronization
