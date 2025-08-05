@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>QuickBook_Callout</members>
+        <members>QuickBook_CustomerJSON</members>
+        <members>QuickBook_CustomerResponseJSON</members>
+        <members>QuickBook_InvoiceQueryJSON</members>
+        <members>QuickBook_ErrorJSON</members>
+        <members>QuickBook_InvoiceResponseJSON</members>
+        <members>QuickBook_Exception</members>
+        <members>QuickBook_InvoiceJSON</members>
+        <members>QuickBook_Map</members>
+        <members>QuickBook_GetRefreshTokenJSON</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>QuickBook_Credentials__c</members>
+        <members>QuickBook_Metadata__mdt</members>
+        <members>Invoice__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Account.QuickBookId__c</members>
+        <members>Account.QuickBookSyncToken__c</members>
+        <members>Account.Contact__c</members>
+        <members>Contact.QuickBookId__c</members>
+        <members>Contact.QuickBookSyncToken__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>64.0</version>
+</Package>

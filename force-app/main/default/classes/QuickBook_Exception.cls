@@ -1,0 +1,1 @@
+public class QuickBook_Exception extends Exception{}
